@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 with open("text.json", "r") as f:
     data = json.loads(f.read())
 
-game = "karlson_itch_io"
-category = ""
-isLevel = True
-level = "Escape 2"
+game = "karlson_itch_io" # Name of the game being analysed
+category = "" # Category of the game, leave blank for all categories
+isLevel = True # True if a category is for Individual Levels, False for Full Game Categories
+level = "Escape 2" # Level of the game, leave blank for all levels
 
 gameData = srcpy.GetGameData(gameUrl=game).perform()
 
