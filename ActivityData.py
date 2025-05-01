@@ -6,7 +6,7 @@ def writeToJson(vals):
     with open("text.json", "w") as f:
         f.write(json.dumps(vals, indent=4))
 
-game = "karlson_itch_io"
+game = "karlson_itch_io" # Name of the game being analysed
 
 gameData = srcpy.GetGameData(gameUrl=game).perform()
 
